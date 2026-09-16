@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="arriba">
+        <div class="bloquePrincipal"></div>
+        <div class="barraSuperior"></div> 
+        <div class="barraBlanca1"></div>
+        <div class="barraBlanca2"></div>
+        <div class="barraBlanca3"></div>
+        <div class="barraBlanca4"></div>
+    </section>
+
+    <section class="mitad">
+        <div class="tarjetaAzul">
+            <div class="barraAzul"></div>
+            <div class="cuadroAzul"></div>
+        </div>
+
+        <div class="tarjetaRoja">
+            <div class="barraRoja"></div>
+            <div class="cuadroRojo"></div>
+        </div>
+
+        <div class="tarjetaNaranja">
+            <div class="barraNaranja"></div>
+            <div class="cuadroNaranja"></div>
+        </div>
+
+        <div class="tarjetaNaranjaInferior">
+            <div class="barraNaranjaInferior"></div>
+            <div class="cuadroNaranjaInferior"></div>
+        </div>
+
+        <div class="tarjetaAzulInferior">
+            <div class="barraAzulInferior"></div>
+            <div class="cuadroAzulInferior"></div>
+        </div>
+
+        <div class="tarjetaRojaInferior">
+            <div class="barraRojaInferior"></div>
+            <div class="cuadroRojoInferior"></div>
+        </div>
+    </section>
+
+    <section class="abajo">
+        <div class="bloqueInferior1">
+            <div class="lineaInferior1"></div>
+            <div class="lineaInferior2"></div>
+            <div class="lineaCortaInferior1"></div>
+        </div>
+
+        <div class="bloqueInferior2"></div>
+            <div class="lineaInferior3"></div>
+            <div class="lineaInferior4"></div>
+            <div class="lineaCortaInferior2"></div>
+
+        <div class="bloqueInferior3">
+            <div class="lineaInferior5"></div>
+            <div class="lineaInferior6"></div>
+            <div class="lineaCortaInferior3"></div>
+        </div>
+    </section>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .arriba{
+            background-color: rgba(255, 214, 128);
+            height: 35vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .bloquePrincipal{
+            background-color: rgba(255, 200, 109);
+            height: 25vh;
+            aspect-ratio: 1/1;
+            margin-left: 15vh;
+        }
+
+        .barraSuperior{
+            background-color: rgba(255, 185, 89);
+            height: 4vh;
+            width: 40vh;
+            margin-bottom: 21vh;    
+            margin-left: 80vh;
+        }
+
+        .barraBlanca1{
+            background-color: rgb(255, 255, 255);
+            height: 2vh;
+            width: 80vh;
+            margin-left: -40vh;
+        }
+
+        .barraBlanca2{
+            background-color: rgb(255, 255, 255);
+            height: 2vh;
+            width: 80vh;
+            margin-bottom:  10vh;
+            margin-left: -80vh;
+        }
+
+        .barraBlanca3{
+            background-color: white;
+            height: 2vh;
+            width: 80vh;
+            margin-bottom: -10vh;
+            margin-left: -80vh;
+        }
+
+        .barraBlanca4{
+            background-color: white;
+            height: 2vh;
+            width: 40vh;
+            margin-bottom: -20vh;
+            margin-left: -80vh;
+        }
+
+        .mitad{
+            background-color: rgb(255, 255, 255);
+            height: 52.5vh;
+            display: flex;
+            align-items: center;
+        }   
+
+        .tarjetaAzul{
+            background-color: rgba(196, 237, 241);
+            height: 17vh;
+            width: 15vh;
+            margin-left: 40vh;
+            margin-bottom: 20vh;
+        }
+
+        .barraAzul{
+            background-color: rgba(171, 224, 229);
+            width: 15vh;
+            height: 2vh;
+        }
+
+        .cuadroAzul{
+            background-color: rgba(171, 224, 229);
+            width: 7.5vh;
+            aspect-ratio: 1/1;
+            margin-left: 3.6vh;
+            margin-top: 3.7vh;
+        }
+
+        .tarjetaRoja{
+            background-color: rgba(255, 153, 120);
+            height: 17vh;
+            width: 15vh;
+            margin-left: 40vh;
+            margin-bottom: 20vh;
+        }
+
+        .barraRoja{
+            background-color: rgba(246, 131, 96);
+            width: 15vh;
+            height: 2vh;
+        }
+
+        .cuadroRojo{
+            background-color: rgba(246, 131, 96);
+            width: 7.5vh;
+            aspect-ratio: 1/1;
+            margin-left: 3.6vh;
+            margin-top: 3.7vh;
+        }
+
+        .tarjetaNaranja{
+            background-color: rgba(255, 214, 128);
+            height: 17vh;
+            width: 15vh;
+            margin-left: 40vh;
+            margin-bottom: 20vh;
+        }
+
+        .barraNaranja{
+            background-color: rgba(255, 200, 109);
+            width: 15vh;
+            height: 2vh;  
+        }
+
+        .cuadroNaranja{
+            background-color: rgba(255, 200, 109);
+            width: 7.5vh;
+            aspect-ratio: 1/1;
+            margin-left: 3.6vh;
+            margin-top: 3.7vh; 
+        }
+
+        .tarjetaNaranjaInferior{
+            background-color: rgba(255, 214, 128);
+            height: 17vh;
+            width: 15.1vh;
+            margin-left: -125vh;
+            margin-bottom: -25vh;   
+        }
+
+        .barraNaranjaInferior{
+            background-color: rgba(255, 200, 109);
+            width: 15.1vh;
+            height: 2vh;  
+        }
+
+        .cuadroNaranjaInferior{
+            background-color: rgba(255, 200, 109);
+            width: 7.5vh;
+            aspect-ratio: 1/1;
+            margin-left: 3.6vh;
+            margin-top: 3.7vh; 
+        }
+
+        .tarjetaAzulInferior{
+            background-color: rgba(196, 237, 241);
+            height: 17vh;
+            width: 15vh;
+            margin-left: 39.9vh;
+            margin-bottom: -25vh;   
+        }
+
+        .barraAzulInferior{
+            background-color: rgba(171, 224, 229);
+            width: 15vh;
+            height: 2vh;   
+        }
+
+        .cuadroAzulInferior{
+            background-color: rgba(171, 224, 229);
+            width: 7.5vh;
+            aspect-ratio: 1/1;
+            margin-left: 3.5vh;
+            margin-top: 3.7vh; 
+        }
+
+        .tarjetaRojaInferior{
+            background-color: rgba(255, 153, 120);
+            height: 17vh;
+            width: 15vh;
+            margin-left: 39.9vh;
+            margin-bottom: -25vh;      
+        }
+
+        .barraRojaInferior{
+            background-color: rgba(246, 131, 96);
+            width: 15vh;
+            height: 2vh;   
+        }
+
+        .cuadroRojoInferior{
+            background-color: rgba(246, 131, 96);
+            width: 7.5vh;
+            aspect-ratio: 1/1;
+            margin-left: 3.5vh;
+            margin-top: 3.7vh;   
+        }
+
+        .abajo{
+            background-color: rgba(230, 229, 229);
+            height: 12.5vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .bloqueInferior1{
+            background-color: rgba(204, 203, 202);
+            width: 15vh;
+            height: 2vh;
+            margin-left: 40vh;
+            margin-bottom: 5vh;
+        }
+
+        .lineaInferior1{
+            background-color: white;
+            width: 15vh;
+            height: 1vh;
+            margin-top: 3vh;
+        }
+
+        .lineaInferior2{
+            background-color: white;
+            width: 15vh;
+            height: 1vh;
+            margin-top: 1.5vh;
+        }
+
+        .lineaCortaInferior1{
+            background-color: white;
+            width: 7.5vh;
+            height: 1vh;
+            margin-left: 3.5vh;
+            margin-top: 1.5vh;
+        }
+
+        .bloqueInferior2{
+            background-color: rgba(204, 203, 202);
+            width: 15vh;
+            height: 2vh;
+            margin-left: 40vh;
+            margin-bottom: 5vh;
+        }
+
+        .lineaInferior3{
+            background-color: white;
+            width: 15vh;
+            height: 1vh;
+            margin-left: -15vh;
+        }
+
+        .lineaInferior4{
+            background-color: white;
+            width: 15vh;
+            height: 1vh;
+            margin-left: -15vh;
+            margin-bottom: -5vh;
+        }
+
+        .lineaCortaInferior2{
+            background-color: white;
+            width: 7.5vh;
+            height: 1vh;
+            margin-left: -11.5vh;
+            margin-top: 10vh;
+        }
+
+        .bloqueInferior3{
+            background-color: rgba(204, 203, 202);
+            width: 15vh;
+            height: 2vh;
+            margin-left: 44vh;
+            margin-bottom: 5vh;
+        }
+
+        .lineaInferior5{
+            background-color: white;
+            width: 15vh;
+            height: 1vh;
+            margin-top: 3vh;
+        }
+
+        .lineaInferior6{
+            background-color: white;
+            width: 15vh;
+            height: 1vh;
+            margin-top: 1.5vh;
+        }
+
+        .lineaCortaInferior3{
+            background-color: white;
+            width: 7.5vh;
+            height: 1vh;
+            margin-left: 3.5vh;
+            margin-top: 1.5vh;
+        }
+    </style>
+</body>
+</html>
